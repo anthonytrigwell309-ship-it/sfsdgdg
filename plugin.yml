@@ -1,0 +1,21 @@
+name: PunishPlugin
+version: 1.0.0
+main: com.example.punish.PunishPlugin
+api-version: '26.3'
+author: YourName
+description: A GUI /punish menu with animated send-offs (UFO abduction, trapdoor, yeet, etc.)
+
+commands:
+  punish:
+    description: Open the punishment menu for a player
+    usage: /punish <player>
+    permission: punish.use
+  pardon:
+    description: Immediately end an active punishment (needed for Indefinite)
+    usage: /pardon <player>
+    permission: punish.use
+
+permissions:
+  punish.use:
+    description: Allows use of /punish
+    default: op
